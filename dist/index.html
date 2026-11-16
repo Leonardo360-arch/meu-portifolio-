@@ -8,12 +8,13 @@
   <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta property="og:title" content="Leonardo Marson Coral — Portfólio">
-  <meta property="og:description" content="Código com propósito. Aprendizado em prática. Projetos, formação e experiência em tecnologia.">
+  <meta property="og:description" content="Projetos para explorar, linguagens para experimentar e uma trajetória em construção.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <title>Leonardo Marson Coral — Desenvolvimento e suporte</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/projects.js" defer></script>
   <script src="assets/app.js" defer></script>
 </head>
 <body id="inicio">
@@ -24,53 +25,56 @@
     <nav id="site-nav" aria-label="Navegação principal"><a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#conhecimentos">Conhecimentos</a><a class="nav-contact" href="#contato">Próximo passo <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></nav>
   </header>
   <main id="conteudo">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> LEONARDO MARSON CORAL</p>
-        <h1 id="hero-title">Código com<br>propósito.<br><span>Aprendizado<br> em prática.</span></h1>
-        <p class="hero-description">Estudante de desenvolvimento de software, com experiência em suporte técnico e vontade de transformar problemas reais em soluções úteis.</p>
-        <div class="hero-actions"><a class="button button-lime" href="#projetos">Explore meus projetos <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a class="text-link" href="https://github.com/Leonardo360-arch" target="_blank" rel="noopener noreferrer">Meu GitHub <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+    <section class="hero hero-interactive wrap" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <div><p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> LEONARDO MARSON CORAL</p><h1 id="hero-title">Código em movimento.<br><span>Ideias em construção.</span></h1></div>
+        <div class="hero-intro-copy"><p>Estudante de desenvolvimento de software, com experiência em suporte técnico. Este é meu espaço para construir, experimentar e compartilhar o que aprendo.</p><a class="text-link" href="#sobre">Conheça minha trajetória <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-coordinates">23° S / 47° O <span>ARARAS, SP</span></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
-        <div class="code-tile tile-java"><span class="tile-icon">{ }</span><span>Java</span></div>
-        <div class="code-tile tile-web"><span class="tile-icon">&lt;/&gt;</span><span>Web</span></div>
-        <div class="code-tile tile-data"><span class="tile-icon">▤</span><span>Dados</span></div>
-        <div class="art-core"><span class="core-slash">/</span><span class="core-letter">L</span><span class="core-period">.</span></div>
-        <div class="art-note"><span class="small-dot"></span> IDEIA → CÓDIGO → SOLUÇÃO</div>
+      <div class="tech-panel">
+        <div class="interactive-panel-heading"><h2 id="tech-title">Minha caixa de ferramentas<span>LINGUAGENS QUE JÁ UTILIZEI</span></h2><span class="panel-symbol" aria-hidden="true">✳</span></div>
+        <div class="tech-playground" data-tech-playground aria-labelledby="tech-title"><div class="playground-grid" aria-hidden="true"></div><span class="playground-label" aria-hidden="true">IDEIA → CÓDIGO → SOLUÇÃO</span>
+<button class="tech-token token-javascript" data-tech="JavaScript" type="button" aria-label="Mover JavaScript" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">JS</span><span class="token-name">JavaScript</span></span></button>
+<button class="tech-token token-php" data-tech="PHP" type="button" aria-label="Mover PHP" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">php</span><span class="token-name">PHP</span></span></button>
+<button class="tech-token token-java" data-tech="Java" type="button" aria-label="Mover Java" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">{ }</span><span class="token-name">Java</span></span></button>
+<button class="tech-token token-html" data-tech="HTML" type="button" aria-label="Mover HTML" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">&lt;/&gt;</span><span class="token-name">HTML</span></span></button>
+<button class="tech-token token-css" data-tech="CSS" type="button" aria-label="Mover CSS" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">#</span><span class="token-name">CSS</span></span></button>
+<button class="tech-token token-sql" data-tech="SQL" type="button" aria-label="Mover SQL" aria-describedby="tech-help"><span class="tech-token-face"><span class="token-icon" aria-hidden="true">SQL</span><span class="token-name">SQL</span></span></button>
+          <noscript><p class="tech-fallback">JavaScript · PHP · Java · HTML · CSS · SQL</p></noscript>
+        </div>
+        <p class="tech-help" id="tech-help">Segure e arraste. No teclado, use as setas com uma linguagem selecionada.</p>
+        <div class="playground-controls"><button id="reset-tech" type="button">Reorganizar peças <span aria-hidden="true">↺</span></button><button id="toggle-motion" type="button" aria-pressed="false">Pausar movimento</button></div>
+        <p class="sr-only" id="tech-feedback" role="status" aria-live="polite"></p>
       </div>
-      <div class="hero-bottom"><span>DESENVOLVER. TESTAR. EVOLUIR.</span><span>CONHEÇA MEU TRABALHO <span aria-hidden="true">↓</span></span></div>
+      <div class="hero-work-panel">
+        <div class="interactive-panel-heading"><h2>Projetos para explorar<span>CLIQUE EM UM CARD PARA CONHECER</span></h2><span class="panel-symbol" aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div>
+        <div id="hero-projects" class="hero-projects" aria-label="Projetos em destaque"></div>
+        <noscript><p class="hero-nojs">Conheça <a href="#projetos">os projetos selecionados e seus repositórios</a>.</p></noscript>
+        <a class="hero-archive-link" href="#projetos">Ver todos os projetos <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <div class="portfolio-note"><span class="small-dot" aria-hidden="true"></span><p><strong>Um portfólio em evolução.</strong><br>Novos projetos entram aqui conforme ganham forma.</p></div>
+      </div>
+      <div class="hero-bottom"><span>DESENVOLVER. TESTAR. EVOLUIR.</span><span>EXPLORE OS PROJETOS <span aria-hidden="true">↓</span></span></div>
     </section>
 
     <section class="projects-section wrap section-space" id="projetos" aria-labelledby="projects-title">
       <div class="section-top"><p class="eyebrow">01 / PROJETOS SELECIONADOS</p><span class="section-note">DO PROBLEMA À IMPLEMENTAÇÃO</span></div>
-      <div class="section-heading"><h2 id="projects-title">Ideias que viraram<br><span>projetos.</span></h2><p>Experiências com desenvolvimento web,<br>processos e organização de código.</p></div>
+      <div class="section-heading"><h2 id="projects-title">Ideias que viraram<br><span>projetos.</span></h2><p>Projetos reais e estudos, com o estágio atual<br>e os aprendizados de cada experiência.</p></div>
       <div class="project-toolbar"><div class="filters" role="group" aria-label="Filtrar projetos"><button type="button" data-filter="all" aria-pressed="true">Todos</button><button type="button" data-filter="web" aria-pressed="false">Desenvolvimento web</button><button type="button" data-filter="java" aria-pressed="false">Java</button></div><span id="project-count" role="status" aria-live="polite">3 projetos</span></div>
       <noscript><p class="noscript-note">Todos os projetos estão disponíveis abaixo. Ative o JavaScript para filtrar e abrir os detalhes.</p></noscript>
-      <div class="projects-grid">
-        <article class="project-card project-featured" data-category="web">
-          <div class="project-visual visual-glace" role="img" aria-label="Ilustração conceitual de uma vitrine de geladinhos Mon Glacé, não é uma captura do sistema">
+      <div class="projects-grid" id="project-grid"></div>
+      <template id="project-card-template"><article class="project-card" data-category=""><div class="project-visual-slot"></div><div class="project-copy"><div class="project-meta"><span data-field="category"></span><span data-field="number"></span></div><h3 data-field="title"></h3><p data-field="summary"></p><ul class="tags" data-field="tech"></ul><p class="project-status" data-field="status"></p><div class="project-actions"><button class="project-detail" type="button" data-project="">Explorar projeto <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></button><a class="project-source" href="https://github.com/Leonardo360-arch" target="_blank" rel="noopener noreferrer">Código <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div><span class="access-note"></span></div></article></template>
+      <template id="cover-mon-glace"><div class="project-visual visual-glace" role="img" aria-label="Ilustração conceitual de uma vitrine de geladinhos Mon Glacé, não é uma captura do sistema">
             <span class="visual-label">ILUSTRAÇÃO DA INTERFACE</span>
             <div class="glace-window"><div class="glace-nav"><span class="glace-logo">mon glacé<span>ARTESANAL • FEITO COM CARINHO</span></span><span class="mini-cart" aria-hidden="true">◡</span></div><div class="glace-content"><p>Um momento doce<br>no seu dia.</p><span>Pequenas alegrias, grandes sabores.</span><div class="glace-products"><div class="ice-cream ice-pink"><i></i></div><div class="ice-cream ice-cream-color"><i></i></div><div class="ice-cream ice-brown"><i></i></div></div><div class="glace-caption">Escolha o seu favorito <span>→</span></div></div></div>
             <span class="visual-footnote">COMÉRCIO LOCAL, EXPERIÊNCIA DIGITAL</span>
-          </div>
-          <div class="project-copy"><div class="project-meta"><span>WEB / COMÉRCIO</span><span>01</span></div><h3>Mon Glacé</h3><p>Uma loja de geladinhos com catálogo, carrinho e acompanhamento de pedidos por token, conectando a experiência de compra à gestão do negócio.</p><ul class="tags" aria-label="Tecnologias Mon Glacé"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Docker</li></ul><p class="project-status">Implementado · homologação operacional pendente</p><div class="project-actions"><button class="project-detail" type="button" data-project="mon-glace">Explorar projeto <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></button><a class="project-source" href="https://github.com/Leonardo360-arch/Mon-Glace" target="_blank" rel="noopener noreferrer">Código <span class="sr-only">do Mon Glacé, repositório privado</span><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div><span class="access-note">Repositório privado · acesso mediante permissão</span></div>
-        </article>
-        <article class="project-card" data-category="web">
-          <div class="project-visual visual-saa" role="img" aria-label="Ilustração conceitual do painel SAA com dados fictícios, não é uma captura do sistema">
+          </div></template>
+      <template id="cover-saa"><div class="project-visual visual-saa" role="img" aria-label="Ilustração conceitual do painel SAA com dados fictícios, não é uma captura do sistema">
             <span class="visual-label">ILUSTRAÇÃO DA INTERFACE · DADOS FICTÍCIOS</span><div class="saa-window"><div class="saa-sidebar"><span class="saa-mark">S<span>AA</span></span><i></i><i></i><i></i></div><div class="saa-content"><div class="saa-top">Visão da coordenação <span>●</span></div><p>Gestão de ausências</p><span class="saa-subtitle">Comunicação entre escola e família</span><div class="saa-table"><div><span>Aluno demonstração A</span><b>Respondida</b></div><div><span>Aluno demonstração B</span><b class="pending">Pendente</b></div><div><span>Aluno demonstração C</span><b>Respondida</b></div></div></div></div>
-          </div>
-          <div class="project-copy"><div class="project-meta"><span>WEB / EDUCAÇÃO</span><span>02</span></div><h3>SAA — Ausências escolares</h3><p>Projeto em equipe para registrar ausências, comunicar responsáveis por e-mail e acompanhar justificativas em um painel escolar.</p><ul class="tags" aria-label="Tecnologias SAA"><li>PHP</li><li>SQLite</li><li>HTML & CSS</li></ul><p class="project-status">MVP · evolução para MongoDB em homologação</p><div class="project-actions"><button class="project-detail" type="button" data-project="saa">Explorar projeto <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></button><a class="project-source" href="https://github.com/Grupo-EVITUS/PI3-2026" target="_blank" rel="noopener noreferrer">Código <span class="sr-only">do SAA</span><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div>
-        </article>
-        <article class="project-card" data-category="java">
-          <div class="project-visual visual-java" role="img" aria-label="Ilustração conceitual do método fábrica criarEntregador na classe LogisticaBicicleta, que cria um EntregadorBicicleta">
+          </div></template>
+      <template id="cover-factory-method"><div class="project-visual visual-java" role="img" aria-label="Ilustração conceitual do método fábrica criarEntregador na classe LogisticaBicicleta, que cria um EntregadorBicicleta">
             <span class="visual-label">ILUSTRAÇÃO DO EXEMPLO</span><div class="terminal"><div class="terminal-bar"><span>● ● ●</span><span>factory-method / java</span></div><div class="terminal-body"><span class="terminal-comment">// LogisticaBicicleta — método fábrica</span><p><span class="terminal-purple">protected</span> Entregador<br><span class="terminal-lime">criarEntregador</span>() {</p><p>  <span class="terminal-purple">return new</span> EntregadorBicicleta();<br>}</p><div class="terminal-output">→ Entrega por bicicleta<br>→ Entrega por moto<span class="terminal-cursor">_</span></div></div></div>
-          </div>
-          <div class="project-copy"><div class="project-meta"><span>JAVA / DESIGN PATTERNS</span><span>03</span></div><h3>Factory Method</h3><p>Um estudo de criação de objetos em Java: o fluxo da entrega permanece, enquanto subclasses definem o entregador por bicicleta ou moto.</p><ul class="tags" aria-label="Tecnologias Factory Method"><li>Java 17+</li><li>POO</li><li>Factory Method</li></ul><p class="project-status">Exemplo executável · terminal e dados em memória</p><div class="project-actions"><button class="project-detail" type="button" data-project="factory-method">Explorar projeto <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></button><a class="project-source" href="https://github.com/Leonardo360-arch/Design-Patterns" target="_blank" rel="noopener noreferrer">Código <span class="sr-only">do Factory Method, repositório privado</span><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div><span class="access-note">Repositório privado · acesso mediante permissão</span></div>
-        </article>
-      </div>
+          </div></template>
+      <noscript><ul class="project-fallback"><li><a href="https://github.com/Leonardo360-arch/Mon-Glace" target="_blank" rel="noopener noreferrer">Mon Glacé — loja de geladinhos em PHP/MySQL (repositório privado).</a></li><li><a href="https://github.com/Grupo-EVITUS/PI3-2026" target="_blank" rel="noopener noreferrer">SAA — projeto em equipe para registrar ausências e acompanhar justificativas.</a></li><li><a href="https://github.com/Leonardo360-arch/Design-Patterns" target="_blank" rel="noopener noreferrer">Factory Method — estudo de criação de objetos em Java (repositório privado).</a></li></ul></noscript>
+
     </section>
 
     <section class="about-section section-space" id="sobre" aria-labelledby="about-title"><div class="wrap"><div class="section-top"><p class="eyebrow">02 / QUEM ESTÁ POR TRÁS DO CÓDIGO</p><span class="section-note">PESSOAS, PROCESSOS E TECNOLOGIA</span></div><div class="about-layout"><div><h2 id="about-title">Uma trajetória<br>feita de <span>prática.</span></h2><div class="about-signature">Leonardo Marson Coral<span>ARARAS / SÃO PAULO</span></div></div><div class="about-copy"><p class="about-lead">Minha entrada em tecnologia combina aprendizado acadêmico, suporte técnico e desenvolvimento de projetos.</p><p>Curso Desenvolvimento de Software Multiplataforma na Fatec Araras. No suporte técnico escolar, tenho contato com os problemas de quem depende da tecnologia no dia a dia.</p><p>Nos projetos, exploro como transformar necessidades em sistemas organizados, com atenção à experiência de uso, aos dados e à manutenção do código.</p><div class="trajectory"><div><span class="trajectory-type">FORMAÇÃO</span><h3>Desenvolvimento de Software<br>Multiplataforma</h3><p>Fatec Araras<br>Início em 2025 · conclusão prevista em 2028</p></div><div><span class="trajectory-type">EXPERIÊNCIA EM TI</span><h3>Suporte técnico escolar</h3><p>Estágio via CIEE<br>Apoio a usuários e manutenção de equipamentos</p></div></div></div></div></div></section>
